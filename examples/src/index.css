@@ -1,0 +1,11 @@
+.rc-anchor .body-item {
+  height: 200px;
+}
+
+.rc-anchor .body-item:nth-child(odd) {
+  background-color: green
+}
+
+.rc-anchor .body-item:nth-child(even) {
+  background-color: red
+}

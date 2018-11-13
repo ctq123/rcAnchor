@@ -1,0 +1,27 @@
+.rc-anchor {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.rc-anchor .rc-anchor-header {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  padding: 5px 0px;
+}
+
+.rc-anchor .header-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.rc-anchor .active-item {
+  background-color: blue;
+  color: white;
+}
+
+.rc-anchor .rc-anchor-body {
+  overflow-y: auto;
+}
