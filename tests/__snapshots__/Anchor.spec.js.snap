@@ -1,0 +1,1942 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Anchor unitTest render correctly 1`] = `
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "rc-anchor",
+      "style": "max-height:400px",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {
+          "class": "rc-anchor-header rc-anchor-header-row",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {
+              "class": "rc-title-item rc-title-item-active",
+              "data-item-id": "1",
+            },
+            "children": Array [
+              Object {
+                "data": "item1",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "class": "rc-title-item",
+                "data-item-id": "2",
+              },
+              "children": Array [
+                Object {
+                  "data": "item2",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "rc-title-item",
+                  "data-item-id": "3",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item3",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "rc-title-item",
+                    "data-item-id": "4",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "item4",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "class": "rc-title-item",
+              "data-item-id": "2",
+            },
+            "children": Array [
+              Object {
+                "data": "item2",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "class": "rc-title-item",
+                "data-item-id": "3",
+              },
+              "children": Array [
+                Object {
+                  "data": "item3",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "rc-title-item",
+                  "data-item-id": "4",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item4",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "class": "rc-title-item rc-title-item-active",
+                "data-item-id": "1",
+              },
+              "children": Array [
+                Object {
+                  "data": "item1",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "class": "rc-title-item",
+              "data-item-id": "3",
+            },
+            "children": Array [
+              Object {
+                "data": "item3",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "class": "rc-title-item",
+                "data-item-id": "4",
+              },
+              "children": Array [
+                Object {
+                  "data": "item4",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "class": "rc-title-item",
+                "data-item-id": "2",
+              },
+              "children": Array [
+                Object {
+                  "data": "item2",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "rc-title-item rc-title-item-active",
+                  "data-item-id": "1",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item1",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "class": "rc-title-item",
+              "data-item-id": "4",
+            },
+            "children": Array [
+              Object {
+                "data": "item4",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "class": "rc-title-item",
+                "data-item-id": "3",
+              },
+              "children": Array [
+                Object {
+                  "data": "item3",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "rc-title-item",
+                  "data-item-id": "2",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item2",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "rc-title-item rc-title-item-active",
+                    "data-item-id": "1",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "item1",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+          },
+        ],
+        "name": "div",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
+            "class": "rc-anchor-body",
+            "style": "max-height:100%",
+          },
+          "children": Array [
+            Object {
+              "attribs": Object {
+                "class": "my-body-item",
+                "data-item-id": "1",
+              },
+              "children": Array [
+                Object {
+                  "data": "item1",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "my-body-item",
+                  "data-item-id": "2",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item2",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "my-body-item",
+                    "data-item-id": "3",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "item3",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "my-body-item",
+                      "data-item-id": "4",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "item4",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "data-item-id": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "data-item-id": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "class": "my-body-item",
+                "data-item-id": "2",
+              },
+              "children": Array [
+                Object {
+                  "data": "item2",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "my-body-item",
+                  "data-item-id": "3",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item3",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "my-body-item",
+                    "data-item-id": "4",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "item4",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "my-body-item",
+                  "data-item-id": "1",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item1",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "class": "my-body-item",
+                "data-item-id": "3",
+              },
+              "children": Array [
+                Object {
+                  "data": "item3",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "my-body-item",
+                  "data-item-id": "4",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item4",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "my-body-item",
+                  "data-item-id": "2",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item2",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "my-body-item",
+                    "data-item-id": "1",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "item1",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "class": "my-body-item",
+                "data-item-id": "4",
+              },
+              "children": Array [
+                Object {
+                  "data": "item4",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "my-body-item",
+                  "data-item-id": "3",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item3",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "my-body-item",
+                    "data-item-id": "2",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "item2",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "class": "my-body-item",
+                      "data-item-id": "1",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "item1",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "data-item-id": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "data-item-id": undefined,
+                    },
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+          ],
+          "name": "div",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": null,
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+            "style": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+            "style": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {
+          "class": "rc-anchor-body",
+          "style": "max-height:100%",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {
+              "class": "my-body-item",
+              "data-item-id": "1",
+            },
+            "children": Array [
+              Object {
+                "data": "item1",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "class": "my-body-item",
+                "data-item-id": "2",
+              },
+              "children": Array [
+                Object {
+                  "data": "item2",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "my-body-item",
+                  "data-item-id": "3",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item3",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "my-body-item",
+                    "data-item-id": "4",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "item4",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "class": "my-body-item",
+              "data-item-id": "2",
+            },
+            "children": Array [
+              Object {
+                "data": "item2",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "class": "my-body-item",
+                "data-item-id": "3",
+              },
+              "children": Array [
+                Object {
+                  "data": "item3",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "my-body-item",
+                  "data-item-id": "4",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item4",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "class": "my-body-item",
+                "data-item-id": "1",
+              },
+              "children": Array [
+                Object {
+                  "data": "item1",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "class": "my-body-item",
+              "data-item-id": "3",
+            },
+            "children": Array [
+              Object {
+                "data": "item3",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "class": "my-body-item",
+                "data-item-id": "4",
+              },
+              "children": Array [
+                Object {
+                  "data": "item4",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "class": "my-body-item",
+                "data-item-id": "2",
+              },
+              "children": Array [
+                Object {
+                  "data": "item2",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "my-body-item",
+                  "data-item-id": "1",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item1",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "class": "my-body-item",
+              "data-item-id": "4",
+            },
+            "children": Array [
+              Object {
+                "data": "item4",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "class": "my-body-item",
+                "data-item-id": "3",
+              },
+              "children": Array [
+                Object {
+                  "data": "item3",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "my-body-item",
+                  "data-item-id": "2",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item2",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "my-body-item",
+                    "data-item-id": "1",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "item1",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "data-item-id": undefined,
+            },
+          },
+        ],
+        "name": "div",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "class": "rc-anchor-header rc-anchor-header-row",
+          },
+          "children": Array [
+            Object {
+              "attribs": Object {
+                "class": "rc-title-item rc-title-item-active",
+                "data-item-id": "1",
+              },
+              "children": Array [
+                Object {
+                  "data": "item1",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "rc-title-item",
+                  "data-item-id": "2",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item2",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "rc-title-item",
+                    "data-item-id": "3",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "item3",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "rc-title-item",
+                      "data-item-id": "4",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "item4",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "data-item-id": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "data-item-id": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "class": "rc-title-item",
+                "data-item-id": "2",
+              },
+              "children": Array [
+                Object {
+                  "data": "item2",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "rc-title-item",
+                  "data-item-id": "3",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item3",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "rc-title-item",
+                    "data-item-id": "4",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "item4",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "rc-title-item rc-title-item-active",
+                  "data-item-id": "1",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item1",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "class": "rc-title-item",
+                "data-item-id": "3",
+              },
+              "children": Array [
+                Object {
+                  "data": "item3",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "rc-title-item",
+                  "data-item-id": "4",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item4",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "rc-title-item",
+                  "data-item-id": "2",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item2",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "rc-title-item rc-title-item-active",
+                    "data-item-id": "1",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "item1",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "class": "rc-title-item",
+                "data-item-id": "4",
+              },
+              "children": Array [
+                Object {
+                  "data": "item4",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "rc-title-item",
+                  "data-item-id": "3",
+                },
+                "children": Array [
+                  Object {
+                    "data": "item3",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "rc-title-item",
+                    "data-item-id": "2",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "item2",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "class": "rc-title-item rc-title-item-active",
+                      "data-item-id": "1",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "item1",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "data-item-id": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "data-item-id": undefined,
+                    },
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "data-item-id": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "data-item-id": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "data-item-id": undefined,
+              },
+            },
+          ],
+          "name": "div",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": null,
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+          "style": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+          "style": undefined,
+        },
+      },
+    ],
+    "name": "div",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "style": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "style": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
+}
+`;
+
+exports[`Anchor unitTest render incorrectly 1`] = `"received is not a function"`;
+
+exports[`Anchor unitTest render incorrectly 2`] = `"received is not a function"`;

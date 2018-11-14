@@ -41,6 +41,7 @@ class Anchor extends React.Component {
     const target = e.target
     // console.log("e>>", e)
     let activeID
+
     const children = target && target.children
     if (children && children.length) {
       for(let i = 0; i < children.length; i++) {

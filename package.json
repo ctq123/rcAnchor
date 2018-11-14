@@ -17,9 +17,8 @@
       "./tests/setup.js"
     ],
     "collectCoverageFrom": [
-      "**/src/rcSearchSelect/**"
+      "**/src/rcAnchor/**"
     ],
-    "collectCoverage": true,
     "transform": {
       "^.+\\.(js|jsx)$": "babel-jest",
       "^.+\\.css$": "./tests/css-transform.js"
