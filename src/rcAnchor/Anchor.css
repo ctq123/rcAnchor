@@ -9,7 +9,6 @@
   display: -webkit-flex;
   flex-wrap: wrap;
   cursor: pointer;
-  padding: 5px 0px;
 }
 
 .rc-anchor .header-item {
@@ -18,8 +17,7 @@
 }
 
 .rc-anchor .active-item {
-  background-color: blue;
-  color: white;
+  color: #1890ff;
 }
 
 .rc-anchor .rc-anchor-body {

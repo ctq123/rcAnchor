@@ -13,6 +13,7 @@ class Anchor extends React.Component {
     super(props)
     this.state = {
       activeID: undefined,
+      headerHeight: 0,
       bodyMaxHeight: '100%'
     }
   }
@@ -38,23 +39,21 @@ class Anchor extends React.Component {
 
   handleScroll(e) {
     const target = e.target
-    const func = function() {
-      let res
-      const scrollTop = target.scrollTop
-      const children = target.children
-      if (!children || !children.length) {
-        return res
-      }
+    // console.log("e>>", e)
+    let activeID
+    const children = target && target.children
+    if (children && children.length) {
       for(let i = 0; i < children.length; i++) {
         const ele = children[i]
-        // console.log("ele.offsetTop>>", ele.offsetTop, "scrollTop>>", scrollTop)
-        if(ele.offsetTop > scrollTop) {
-          return ele.getAttribute('data-item-id')
+        // console.log("ele.offsetTop>>", ele.offsetTop, "target.offsetTop>>", target.offsetTop)
+        // console.log("this.state.headerHeight>>", this.state.headerHeight, "target.scrollTop>>", target.scrollTop)
+        const valid = (ele.offsetTop - target.offsetTop) > (target.scrollTop - this.state.headerHeight)
+        if(valid) {
+          activeID = ele.getAttribute('data-item-id')
+          break
         }
       }
     }
-    // console.log("activeID>>", activeID)
-    const activeID = func()
     if (activeID) {
       this.setState({
         activeID
@@ -67,9 +66,10 @@ class Anchor extends React.Component {
     const maxHeight = this.props.maxHeight 
     if (headDirection === 'row' && maxHeight > 0) {
       const header = this.getEleByClass('rc-anchor-header', 'single')
-      const hh = (header && header.offsetHeight) || 0
-      const bodyMaxHeight = (maxHeight - hh) || '100%'
+      const headerHeight = (header && header.offsetHeight) || 0
+      const bodyMaxHeight = (maxHeight - headerHeight) || '100%'
       this.setState({
+        headerHeight,
         bodyMaxHeight
       })
     }
@@ -78,12 +78,10 @@ class Anchor extends React.Component {
   scrollToBlock(e) {
     e.preventDefault()
     const target = e.target
+    // console.log("e2>>", e)
     this.removeActiveClass()
     const itemId = target.getAttribute('data-item-id')
     if (itemId) {
-      // this.setState({
-      //   activeID: itemId
-      // })
       const container = this.getEleByClass('rc-anchor-body', 'single')
       const eles = container && container.children
       if (!eles || !eles.length) {
@@ -93,6 +91,7 @@ class Anchor extends React.Component {
       offsetTop = (container.firstChild && container.firstChild.offsetTop) || 0
       for(let i = 0; i < eles.length; i++) {
         ele = eles[i]
+        // console.log("ele.offsetTop=", ele.offsetTop, "offsetTop=", offsetTop)
         if (ele && ele.getAttribute('data-item-id') === itemId) {
           if (ele) {
             container.scrollTop = ele.offsetTop - offsetTop
@@ -101,7 +100,7 @@ class Anchor extends React.Component {
         }
       }
     }
-    return target
+    this.props.onClick(target)
   }
 
   getEleByClass(className, type='multi') {
@@ -189,6 +188,7 @@ Anchor.propTypes = {
   headerClassName: PropTypes.string,
   titleClassName: PropTypes.string,
   bodyClassName: PropTypes.string,
+  onClick: PropTypes.func,
 }
 
 Anchor.defaultProps = {
@@ -197,6 +197,7 @@ Anchor.defaultProps = {
   headerClassName: '',
   titleClassName: '',
   bodyClassName: '',
+  onClick: () => {}
 }
 
 

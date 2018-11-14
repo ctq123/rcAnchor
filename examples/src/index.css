@@ -1,11 +1,34 @@
-.rc-anchor .body-item {
-  height: 200px;
+.my-rc-anchor {
+  padding: 5px;
+  border: 1px solid #e4e4e4;
 }
 
-.rc-anchor .body-item:nth-child(odd) {
+.my-rc-anchor .my-rc-anchor-header {
+  padding: 5px 0px;
+}
+
+.my-rc-anchor .my-rc-title-item {
+  padding: 2px 3px;
+}
+
+.my-rc-anchor .active-item {
+  background-color: blue;
+  color: white;
+}
+
+.my-rc-anchor .my-rc-anchor-body {
+  border-top: 1px solid #e4e4e4;
+}
+
+.my-rc-anchor .my-body-item {
+  height: 200px;
+  padding: 5px;
+}
+
+.my-rc-anchor .my-body-item:nth-child(odd) {
   background-color: green
 }
 
-.rc-anchor .body-item:nth-child(even) {
+.my-rc-anchor .my-body-item:nth-child(even) {
   background-color: red
 }
