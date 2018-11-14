@@ -4,20 +4,19 @@
   width: 100%;
 }
 
-.rc-anchor .rc-anchor-header {
+.rc-anchor .rc-anchor-header-row {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
   cursor: pointer;
 }
 
-.rc-anchor .header-item {
-  display: inline-block;
-  margin-right: 10px;
+.rc-anchor .rc-title-item-active {
+  color: #1890ff;
 }
 
-.rc-anchor .active-item {
-  color: #1890ff;
+.rc-anchor .rc-anchor-header-row > div{
+  display: inline-block;
 }
 
 .rc-anchor .rc-anchor-body {

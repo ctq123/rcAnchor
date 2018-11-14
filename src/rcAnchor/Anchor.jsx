@@ -118,10 +118,10 @@ class Anchor extends React.Component {
   }
 
   removeActiveClass () {
-    const items = this.getEleByClass('header-item')
+    const items = this.getEleByClass('rc-title-item')
     for (let i in items) {
       if (items[i]) {
-        this.removeClassName(items[i], 'active-item')
+        this.removeClassName(items[i], 'rc-title-item-active')
       }
     }
   }
@@ -146,7 +146,7 @@ class Anchor extends React.Component {
     if (items && Array.isArray(items)) {
       return items.map((item) => {
         if (item && item.itemId) {
-          const cls = !this.state.activeID || this.state.activeID === item.itemId ? 'header-item active-item' : 'header-item'
+          const cls = !this.state.activeID || this.state.activeID === item.itemId ? 'rc-title-item rc-title-item-active' : 'rc-title-item'
           const tcls = titlecls ? (cls + ' ' + titlecls) : cls
           if (!this.state.activeID) {
             this.state.activeID = item.itemId
@@ -162,9 +162,11 @@ class Anchor extends React.Component {
     const maxHeight = this.props.maxHeight
     const titleList = this.props.titleList
     const { bodyMaxHeight } = this.state
-    const { className, headerClassName, titleClassName, bodyClassName } = this.props
+    const { headDirection, className, headerClassName, titleClassName, bodyClassName } = this.props
     const concls = className ? 'rc-anchor ' + className : 'rc-anchor'
-    const headcls = headerClassName ? 'rc-anchor-header ' + headerClassName : 'rc-anchor-header'
+    let headcls = 'rc-anchor-header'
+    headcls += (headDirection === 'row' ? ' rc-anchor-header-row' : ' rc-anchor-header-col')
+    headcls += (headerClassName ? (' ' + headerClassName) : '')
     const bodycls = bodyClassName ? 'rc-anchor-body ' + bodyClassName : 'rc-anchor-body'
     const style = maxHeight > 0 ? { maxHeight } : {}
     return (
