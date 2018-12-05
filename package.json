@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "coverage": "jest --coverage",
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack-dev-server --mode development --open --port 3001",
     "prepublish": "babel src -d dist --copy-files"
   },
   "jest": {

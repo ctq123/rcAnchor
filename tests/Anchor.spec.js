@@ -75,5 +75,5 @@ describe('Anchor unitTest', () => {
     // console.log(node.debug())
     expect(node.instance().offsetTop).toEqual(0)
   })
-  
+
 })
