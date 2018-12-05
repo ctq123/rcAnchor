@@ -1,6 +1,6 @@
 {
-  "name": "rcanchor",
-  "version": "1.0.0",
+  "name": "rc-anchor",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "directories": {
@@ -28,6 +28,11 @@
     "type": "git",
     "url": "git+https://github.com/ctq123/rcAnchor.git"
   },
+  "keywords": [
+    "rc-anchor",
+    "rcanchor",
+    "anchor"
+  ],
   "author": "tqcheng",
   "license": "ISC",
   "bugs": {
