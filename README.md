@@ -1,5 +1,5 @@
 # rc-anchor
-这是一个react锚点组件（滚动游标），可内嵌多个在同一个页面，相互独立互不影响，提供横向和纵向排版，css样式可自定义
+这是一个react锚点组件，可内嵌多个在同一个页面，相互独立互不影响，提供横向和纵向排版，css样式可自定义
 
 ## React Anchor
 [![Build Status](https://travis-ci.org/ctq123/rcAnchor.svg?branch=master&foo=bar)](https://travis-ci.org/ctq123/rcAnchor)
@@ -184,7 +184,7 @@ css
 属性 | 描述 | 类型 | 默认值 | 是否必填
 ---|---|---|---|--
 maxHeight | 最大高度 | number |  | 是
-titleList | 头部显示名称数组 | array |  | 是
+titleList | 头部显示名称数组，数组对象必须包含两个属性{itemId, name} | array |  | 是
 headDirection | 方向，横向或垂直 | enum ('row'|'col') | 'row' | 否
 onClick | 点击头部名称回调函数 | function | (e)=>{} | 否
 className | 该组件的className | string | '' | 否
