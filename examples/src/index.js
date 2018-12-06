@@ -9,7 +9,7 @@ class App extends React.Component {
   }
 
   handleClickTitle(node) {
-    // console.log('node>>>', node)
+    console.log('node>>>', node)
   }
 
   render() {
@@ -27,9 +27,10 @@ class App extends React.Component {
     return (
       <div style={{ width: 300, marginTop: 50, marginLeft: 200 }}>
         <Anchor maxHeight={400} titleList={titleList}
-          className='my-rc-anchor' headerClassName='my-rc-anchor-header'
+          className='my-rc-anchor' headerClassName='my-rc-anchor-header2'
           titleClassName='my-rc-title-item' bodyClassName='my-rc-anchor-body'
           onClick={this.handleClickTitle.bind(this)}
+          headDirection='col'
           >
           {generateBodyItem}
         </Anchor>
