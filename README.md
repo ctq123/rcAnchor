@@ -1,5 +1,5 @@
 # rc-anchor
-这是一个react锚点组件，可内嵌多个在同一个页面，相互独立互不影响，提供横向和纵向排版，css样式可自定义
+这是一个react锚点组件（滚动游标），可内嵌多个在同一个页面，相互独立互不影响，提供横向和纵向排版，css样式完全自定义
 
 ## React Anchor
 [![Build Status](https://travis-ci.org/ctq123/rcAnchor.svg?branch=master&foo=bar)](https://travis-ci.org/ctq123/rcAnchor)
