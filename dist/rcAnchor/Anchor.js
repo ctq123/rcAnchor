@@ -43,6 +43,7 @@ var Anchor = function (_React$Component) {
 
     _this.state = {
       activeID: undefined,
+      clickActiveID: undefined,
       headerHeight: 0,
       bodyMaxHeight: '100%'
     };
@@ -79,22 +80,29 @@ var Anchor = function (_React$Component) {
       // console.log("e>>", e)
       var activeID = void 0;
 
-      var children = target && target.children;
-      if (children && children.length) {
-        for (var i = 0; i < children.length; i++) {
-          var ele = children[i];
-          // console.log("ele.offsetTop>>", ele.offsetTop, "target.offsetTop>>", target.offsetTop)
-          // console.log("this.state.headerHeight>>", this.state.headerHeight, "target.scrollTop>>", target.scrollTop)
-          var valid = ele.offsetTop - target.offsetTop > target.scrollTop - this.state.headerHeight;
-          if (valid) {
-            activeID = ele.getAttribute('data-item-id');
-            break;
+      if (this.state.clickActiveID) {
+        activeID = this.state.clickActiveID;
+      } else {
+        var children = target && target.children;
+        if (children && children.length) {
+          for (var i = 0; i < children.length; i++) {
+            var ele = children[i];
+            // console.log("ele.offsetTop>>", ele.offsetTop, "target.offsetTop>>", target.offsetTop)
+            // console.log("this.state.headerHeight>>", this.state.headerHeight, "target.scrollTop>>", target.scrollTop)
+            var valid = ele.offsetTop - target.offsetTop > target.scrollTop - this.state.headerHeight;
+            // console.log("valid", valid)
+            if (valid) {
+              activeID = ele.getAttribute('data-item-id');
+              break;
+            }
           }
         }
       }
+
       if (activeID) {
         this.setState({
-          activeID: activeID
+          activeID: activeID,
+          clickActiveID: undefined
         });
       }
     }
@@ -142,6 +150,10 @@ var Anchor = function (_React$Component) {
             break;
           }
         }
+        this.setState({
+          activeID: itemId,
+          clickActiveID: itemId
+        });
       }
       this.props.onClick(target);
     }
@@ -200,7 +212,7 @@ var Anchor = function (_React$Component) {
       if (items && Array.isArray(items)) {
         return items.map(function (item) {
           if (item && item.itemId) {
-            var cls = !_this3.state.activeID || _this3.state.activeID === item.itemId ? 'rc-title-item rc-title-item-active' : 'rc-title-item';
+            var cls = !_this3.state.activeID || _this3.state.activeID == item.itemId ? 'rc-title-item rc-title-item-active' : 'rc-title-item';
             var tcls = titlecls ? cls + ' ' + titlecls : cls;
             if (!_this3.state.activeID) {
               _this3.state.activeID = item.itemId;

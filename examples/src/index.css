@@ -14,6 +14,7 @@
 
 .my-rc-anchor .my-rc-title-item {
   padding: 2px 3px;
+  margin-right: 5px;
 }
 
 .my-rc-anchor .rc-title-item-active {
@@ -28,6 +29,10 @@
 .my-rc-anchor .my-body-item {
   height: 200px;
   padding: 5px;
+}
+
+.my-rc-anchor .my-body-item2 {
+  height: 50px;
 }
 
 .my-rc-anchor .my-body-item:nth-child(odd) {

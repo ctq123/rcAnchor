@@ -13,6 +13,7 @@ class Anchor extends React.Component {
     super(props)
     this.state = {
       activeID: undefined,
+      clickActiveID: undefined,
       headerHeight: 0,
       bodyMaxHeight: '100%'
     }
@@ -42,22 +43,29 @@ class Anchor extends React.Component {
     // console.log("e>>", e)
     let activeID
 
-    const children = target && target.children
-    if (children && children.length) {
-      for(let i = 0; i < children.length; i++) {
-        const ele = children[i]
-        // console.log("ele.offsetTop>>", ele.offsetTop, "target.offsetTop>>", target.offsetTop)
-        // console.log("this.state.headerHeight>>", this.state.headerHeight, "target.scrollTop>>", target.scrollTop)
-        const valid = (ele.offsetTop - target.offsetTop) > (target.scrollTop - this.state.headerHeight)
-        if(valid) {
-          activeID = ele.getAttribute('data-item-id')
-          break
+    if (this.state.clickActiveID) {
+      activeID = this.state.clickActiveID
+    } else {
+      const children = target && target.children
+      if (children && children.length) {
+        for(let i = 0; i < children.length; i++) {
+          const ele = children[i]
+          // console.log("ele.offsetTop>>", ele.offsetTop, "target.offsetTop>>", target.offsetTop)
+          // console.log("this.state.headerHeight>>", this.state.headerHeight, "target.scrollTop>>", target.scrollTop)
+          const valid = (ele.offsetTop - target.offsetTop) > (target.scrollTop - this.state.headerHeight)
+          // console.log("valid", valid)
+          if(valid) {
+            activeID = ele.getAttribute('data-item-id')
+            break
+          }
         }
       }
     }
+    
     if (activeID) {
       this.setState({
-        activeID
+        activeID,
+        clickActiveID: undefined
       })
     }
   }
@@ -100,6 +108,10 @@ class Anchor extends React.Component {
           break
         }
       }
+      this.setState({
+        activeID: itemId,
+        clickActiveID: itemId
+      })
     }
     this.props.onClick(target)
   }
@@ -147,7 +159,7 @@ class Anchor extends React.Component {
     if (items && Array.isArray(items)) {
       return items.map((item) => {
         if (item && item.itemId) {
-          const cls = !this.state.activeID || this.state.activeID === item.itemId ? 'rc-title-item rc-title-item-active' : 'rc-title-item'
+          const cls = !this.state.activeID || this.state.activeID == item.itemId ? 'rc-title-item rc-title-item-active' : 'rc-title-item'
           const tcls = titlecls ? (cls + ' ' + titlecls) : cls
           if (!this.state.activeID) {
             this.state.activeID = item.itemId
