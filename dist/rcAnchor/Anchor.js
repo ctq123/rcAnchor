@@ -66,6 +66,15 @@ var Anchor = function (_React$Component) {
       }
     }
   }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      if (this.props.bodyHeightRealTime) {
+        var res = this.getMaxHeight();
+        this.state.headerHeight = res[0];
+        this.state.bodyMaxHeight = res[1];
+      }
+    }
+  }, {
     key: 'componentWillUnmount',
     value: function componentWillUnmount() {
       var container = this.getEleByClass('rc-anchor-body', 'single');
@@ -107,18 +116,32 @@ var Anchor = function (_React$Component) {
       }
     }
   }, {
-    key: 'setBodyHeight',
-    value: function setBodyHeight() {
+    key: 'getMaxHeight',
+    value: function getMaxHeight() {
       var headDirection = this.props.headDirection;
 
-      var maxHeight = this.props.maxHeight;
-      if (headDirection === 'row' && maxHeight > 0) {
+      var res = [0, '100%'];
+      if (headDirection === 'row') {
+        var container = _reactDom2.default.findDOMNode(this);
         var header = this.getEleByClass('rc-anchor-header', 'single');
-        var headerHeight = header && header.offsetHeight || 0;
-        var bodyMaxHeight = maxHeight - headerHeight || '100%';
+        var containerHeight = container && container.clientHeight || 0;
+        var headerHeight = header && header.clientHeight || 0;
+        var headerOffsetTop = header && header.offsetTop || 0;
+        // console.log("containerHeight=", container.clientHeight, " headerHeight=", headerHeight)
+        var bodyMaxHeight = containerHeight - headerHeight - headerOffsetTop * 2;
+        bodyMaxHeight = bodyMaxHeight > 0 && bodyMaxHeight || '100%';
+        res = [headerHeight, bodyMaxHeight];
+      }
+      return res;
+    }
+  }, {
+    key: 'setBodyHeight',
+    value: function setBodyHeight() {
+      if (this.props.headDirection === 'row') {
+        var res = this.getMaxHeight();
         this.setState({
-          headerHeight: headerHeight,
-          bodyMaxHeight: bodyMaxHeight
+          headerHeight: res[0],
+          bodyMaxHeight: res[1]
         });
       }
     }
@@ -230,7 +253,7 @@ var Anchor = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      var maxHeight = this.props.maxHeight;
+      // const maxHeight = this.props.maxHeight
       var titleList = this.props.titleList;
       var bodyMaxHeight = this.state.bodyMaxHeight;
       var _props = this.props,
@@ -245,10 +268,10 @@ var Anchor = function (_React$Component) {
       headcls += headDirection === 'row' ? ' rc-anchor-header-row' : ' rc-anchor-header-col';
       headcls += headerClassName ? ' ' + headerClassName : '';
       var bodycls = bodyClassName ? 'rc-anchor-body ' + bodyClassName : 'rc-anchor-body';
-      var style = maxHeight > 0 ? { maxHeight: maxHeight } : {};
+      // const style = maxHeight > 0 ? { maxHeight } : {}
       return _react2.default.createElement(
         'div',
-        { className: concls, style: style },
+        { className: concls },
         _react2.default.createElement(
           'div',
           { className: headcls },
@@ -267,14 +290,14 @@ var Anchor = function (_React$Component) {
 }(_react2.default.Component);
 
 Anchor.propTypes = {
-  maxHeight: _propTypes2.default.number.isRequired,
   titleList: _propTypes2.default.array.isRequired,
   headDirection: _propTypes2.default.oneOf(['row', 'col']),
   className: _propTypes2.default.string,
   headerClassName: _propTypes2.default.string,
   titleClassName: _propTypes2.default.string,
   bodyClassName: _propTypes2.default.string,
-  onClick: _propTypes2.default.func
+  onClick: _propTypes2.default.func,
+  bodyHeightRealTime: _propTypes2.default.bool
 };
 
 Anchor.defaultProps = {
@@ -283,7 +306,8 @@ Anchor.defaultProps = {
   headerClassName: '',
   titleClassName: '',
   bodyClassName: '',
-  onClick: function onClick() {}
+  onClick: function onClick() {},
+  bodyHeightRealTime: false
 };
 
 exports.default = Anchor;
