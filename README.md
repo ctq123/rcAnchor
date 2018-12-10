@@ -41,8 +41,8 @@ class App extends React.Component {
       }
     })
     return (
-      <div style={{ width: 300, marginTop: 50, marginLeft: 200 }}>
-        <Anchor maxHeight={400} titleList={titleList}
+      <div style={{ width: 300, Height: 400, marginTop: 50, marginLeft: 200 }}>
+        <Anchor titleList={titleList}
           className='my-rc-anchor' headerClassName='my-rc-anchor-header'
           titleClassName='my-rc-title-item' bodyClassName='my-rc-anchor-body'
           onClick={this.handleClickTitle.bind(this)}
@@ -123,8 +123,8 @@ class App extends React.Component {
       }
     })
     return (
-      <div style={{ width: 300, marginTop: 50, marginLeft: 200 }}>
-        <Anchor maxHeight={400} titleList={titleList}
+      <div style={{ width: 300, Height: 400, marginTop: 50, marginLeft: 200 }}>
+        <Anchor titleList={titleList}
           className='my-rc-anchor' headerClassName='my-rc-anchor-header2'
           titleClassName='my-rc-title-item' bodyClassName='my-rc-anchor-body'
           onClick={this.handleClickTitle.bind(this)}
@@ -183,9 +183,9 @@ css
 
 属性 | 描述 | 类型 | 默认值 | 是否必填
 ---|---|---|---|--
-maxHeight | 最大高度 | number |  | 是
 titleList | 头部显示名称数组，数组对象必须包含两个属性{itemId, name} | array |  | 是
 headDirection | 方向，横向或垂直 | enum ('row'|'col') | 'row' | 否
+bodyHeightRealTime | 组件body最大高度是否实时获取，仅当headDirection='row'时有效 | bool | false | 否
 onClick | 点击头部名称回调函数 | function | (e)=>{} | 否
 className | 该组件的className | string | '' | 否
 headerClassName | 该组件头部的className | string | '' | 否
