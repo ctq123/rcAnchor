@@ -19,29 +19,29 @@ describe('Anchor unitTest', () => {
     })
   })
 
-  it('render correctly', () => {
-    const wrapper = render(<Anchor maxHeight={400} titleList={titleList}>{generateBodyItem}</Anchor>)
-    expect(wrapper).toMatchSnapshot()
-  })
-
   it('render incorrectly', () => {
-    const wrapper = render(<Anchor titleList={titleList}>{generateBodyItem}</Anchor>)
+    const wrapper = render(<Anchor>{generateBodyItem}</Anchor>)
     expect(wrapper).toThrowErrorMatchingSnapshot()
-
-    const wrapper2 = render(<Anchor maxHeight={1}>{generateBodyItem}</Anchor>)
-    expect(wrapper2).toThrowErrorMatchingSnapshot()
   })
 
   it('set headDirection', () => {
-    const wrapper = mount(<Anchor maxHeight={400} titleList={titleList}>{generateBodyItem}</Anchor>)
+    const wrapper = mount(<Anchor titleList={titleList}>{generateBodyItem}</Anchor>)
     expect(wrapper.find('.rc-anchor-header-row').length).toEqual(1)
 
     wrapper.setProps({ headDirection: 'col' })
     expect(wrapper.find('.rc-anchor-header-col').length).toEqual(1)
   })
 
+  it('set bodyHeightRealTime', () => {
+    const wrapper = mount(<Anchor titleList={titleList}>{generateBodyItem}</Anchor>)
+    expect(wrapper.props().bodyHeightRealTime).toEqual(false)
+
+    wrapper.setProps({ bodyHeightRealTime: true })
+    expect(wrapper.props().bodyHeightRealTime).toEqual(true)
+  })
+
   it('set className', () => {
-    const wrapper = mount(<Anchor maxHeight={400} titleList={titleList}>{generateBodyItem}</Anchor>)
+    const wrapper = mount(<Anchor titleList={titleList}>{generateBodyItem}</Anchor>)
     expect(wrapper.find('.my-anchor-class').length).toEqual(0)
 
     wrapper.setProps({ className: 'my-anchor-class' })
@@ -61,7 +61,7 @@ describe('Anchor unitTest', () => {
     let cbNode
     const handleClick = (...args) => ([cbNode] = args)
 
-    const wrapper = mount(<Anchor maxHeight={400} titleList={titleList} onClick={handleClick}>{generateBodyItem}</Anchor>)
+    const wrapper = mount(<Anchor titleList={titleList} onClick={handleClick}>{generateBodyItem}</Anchor>)
     const node = wrapper.find('.rc-title-item').filterWhere(item => item.prop('data-item-id') === '3')
     node.simulate('click')
     expect(cbNode).not.toBe(undefined)
@@ -69,7 +69,7 @@ describe('Anchor unitTest', () => {
   })
 
   it('handle scroll event', () => {
-    const wrapper = mount(<Anchor maxHeight={400} titleList={titleList}>{generateBodyItem}</Anchor>)
+    const wrapper = mount(<Anchor titleList={titleList}>{generateBodyItem}</Anchor>)
     const node = wrapper.find('.rc-anchor-body')
     node.simulate('scroll')
     // console.log(node.debug())
