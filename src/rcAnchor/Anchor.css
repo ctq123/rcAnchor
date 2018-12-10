@@ -12,7 +12,7 @@
 }
 
 .rc-anchor .rc-title-item-active {
-  color: #1890ff;
+  position: static;
 }
 
 .rc-anchor .rc-anchor-header-row > div{
