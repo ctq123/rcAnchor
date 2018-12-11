@@ -164,23 +164,23 @@ var Anchor = function (_React$Component) {
       if (itemId) {
         var container = this.getEleByClass('rc-anchor-body', 'single');
         var eles = container && container.children;
-        if (!eles || !eles.length) {
-          return target;
-        }
-        var offsetTop = void 0,
-            ele = null,
-            parentEle = null;
-        offsetTop = container.firstChild && container.firstChild.offsetTop || 0;
-        for (var i = 0; i < eles.length; i++) {
-          ele = eles[i];
-          // console.log("ele.offsetTop=", ele.offsetTop, "offsetTop=", offsetTop)
-          if (ele && ele.getAttribute('data-item-id') === itemId) {
-            if (ele) {
-              container.scrollTop = ele.offsetTop - offsetTop;
+        if (eles && eles.length) {
+          var offsetTop = void 0,
+              ele = null,
+              parentEle = null;
+          offsetTop = container.firstChild && container.firstChild.offsetTop || 0;
+          for (var i = 0; i < eles.length; i++) {
+            ele = eles[i];
+            // console.log("ele.offsetTop=", ele.offsetTop, "offsetTop=", offsetTop)
+            if (ele && ele.getAttribute('data-item-id') === itemId) {
+              if (ele) {
+                container.scrollTop = ele.offsetTop - offsetTop;
+              }
+              break;
             }
-            break;
           }
         }
+
         this.setState({
           activeID: itemId,
           clickActiveID: itemId
@@ -261,7 +261,6 @@ var Anchor = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      // const maxHeight = this.props.maxHeight
       var titleList = this.props.titleList;
       var bodyMaxHeight = this.state.bodyMaxHeight;
       var _props = this.props,
@@ -276,7 +275,6 @@ var Anchor = function (_React$Component) {
       headcls += headDirection === 'row' ? ' rc-anchor-header-row' : ' rc-anchor-header-col';
       headcls += headerClassName ? ' ' + headerClassName : '';
       var bodycls = bodyClassName ? 'rc-anchor-body ' + bodyClassName : 'rc-anchor-body';
-      // const style = maxHeight > 0 ? { maxHeight } : {}
       return _react2.default.createElement(
         'div',
         { className: concls },

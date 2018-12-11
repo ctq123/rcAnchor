@@ -61,7 +61,7 @@ class App extends React.Component {
           bodyHeightRealTime={true}
           onClick={this.handleClickTitle.bind(this)}
           >
-          {generateBodyItem}
+          {/* {generateBodyItem} */}
         </Anchor>
       </div>
     )

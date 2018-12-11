@@ -114,25 +114,25 @@ class Anchor extends React.Component {
     const target = e.target
     // console.log("e2>>", e)
     this.removeActiveClass()
-    const itemId = target.getAttribute('data-item-id')
+    const itemId = target.getAttribute('data-item-id')   
     if (itemId) {
       const container = this.getEleByClass('rc-anchor-body', 'single')
       const eles = container && container.children
-      if (!eles || !eles.length) {
-        return target
-      }
-      let offsetTop, ele = null, parentEle = null
-      offsetTop = (container.firstChild && container.firstChild.offsetTop) || 0
-      for(let i = 0; i < eles.length; i++) {
-        ele = eles[i]
-        // console.log("ele.offsetTop=", ele.offsetTop, "offsetTop=", offsetTop)
-        if (ele && ele.getAttribute('data-item-id') === itemId) {
-          if (ele) {
-            container.scrollTop = ele.offsetTop - offsetTop
+      if (eles && eles.length) {
+        let offsetTop, ele = null, parentEle = null
+        offsetTop = (container.firstChild && container.firstChild.offsetTop) || 0
+        for(let i = 0; i < eles.length; i++) {
+          ele = eles[i]
+          // console.log("ele.offsetTop=", ele.offsetTop, "offsetTop=", offsetTop)
+          if (ele && ele.getAttribute('data-item-id') === itemId) {
+            if (ele) {
+              container.scrollTop = ele.offsetTop - offsetTop
+            }
+            break
           }
-          break
         }
       }
+      
       this.setState({
         activeID: itemId,
         clickActiveID: itemId
@@ -197,7 +197,6 @@ class Anchor extends React.Component {
   }
 
   render() {
-    // const maxHeight = this.props.maxHeight
     const titleList = this.props.titleList
     const { bodyMaxHeight } = this.state
     const { headDirection, className, headerClassName, titleClassName, bodyClassName } = this.props
@@ -206,7 +205,6 @@ class Anchor extends React.Component {
     headcls += (headDirection === 'row' ? ' rc-anchor-header-row' : ' rc-anchor-header-col')
     headcls += (headerClassName ? (' ' + headerClassName) : '')
     const bodycls = bodyClassName ? 'rc-anchor-body ' + bodyClassName : 'rc-anchor-body'
-    // const style = maxHeight > 0 ? { maxHeight } : {}
     return (
       <div className={concls}>
         <div className={headcls}>
