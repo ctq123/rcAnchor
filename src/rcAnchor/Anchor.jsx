@@ -15,7 +15,8 @@ class Anchor extends React.Component {
       activeID: undefined,
       clickActiveID: undefined,
       headerOffsetTop: 0,
-      bodyMaxHeight: '100%'
+      bodyMaxHeight: '100%',
+      bounds: (props.bounds > 0 && props.bounds) || 5
     }
   }
 
@@ -49,7 +50,7 @@ class Anchor extends React.Component {
   handleScroll(e) {
     const target = e.target
     // console.log("e>>", e)
-    const { headerOffsetTop, clickActiveID } = this.state
+    const { headerOffsetTop, clickActiveID, bounds } = this.state
     let activeID
 
     if (clickActiveID) {
@@ -62,7 +63,7 @@ class Anchor extends React.Component {
           const ele = children[i]
           // console.log("ele", ele)
           // console.log("target.scrollTop>>", target.scrollTop, "ele.offsetTop>>", ele.offsetTop, "firstChildOffsetTop>>", firstChildOffsetTop)
-          const valid = target.scrollTop - (ele.offsetTop - firstChildOffsetTop - 2 * headerOffsetTop)
+          const valid = target.scrollTop - (ele.offsetTop - firstChildOffsetTop - 2 * headerOffsetTop) + bounds
           // console.log("valid", valid)
           if (valid > 0) {
             activeID = ele.getAttribute('data-item-id')
@@ -227,7 +228,8 @@ Anchor.propTypes = {
   titleClassName: PropTypes.string,
   bodyClassName: PropTypes.string,
   onClick: PropTypes.func,
-  bodyHeightRealTime: PropTypes.bool
+  bodyHeightRealTime: PropTypes.bool,
+  bounds: PropTypes.number
 }
 
 Anchor.defaultProps = {
@@ -237,7 +239,8 @@ Anchor.defaultProps = {
   titleClassName: '',
   bodyClassName: '',
   onClick: () => {},
-  bodyHeightRealTime: false
+  bodyHeightRealTime: false,
+  bounds: 5,
 }
 
 

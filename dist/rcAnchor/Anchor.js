@@ -45,7 +45,8 @@ var Anchor = function (_React$Component) {
       activeID: undefined,
       clickActiveID: undefined,
       headerOffsetTop: 0,
-      bodyMaxHeight: '100%'
+      bodyMaxHeight: '100%',
+      bounds: props.bounds > 0 && props.bounds || 5
     };
     return _this;
   }
@@ -89,7 +90,8 @@ var Anchor = function (_React$Component) {
       // console.log("e>>", e)
       var _state = this.state,
           headerOffsetTop = _state.headerOffsetTop,
-          clickActiveID = _state.clickActiveID;
+          clickActiveID = _state.clickActiveID,
+          bounds = _state.bounds;
 
       var activeID = void 0;
 
@@ -103,7 +105,7 @@ var Anchor = function (_React$Component) {
             var ele = children[i];
             // console.log("ele", ele)
             // console.log("target.scrollTop>>", target.scrollTop, "ele.offsetTop>>", ele.offsetTop, "firstChildOffsetTop>>", firstChildOffsetTop)
-            var valid = target.scrollTop - (ele.offsetTop - firstChildOffsetTop - 2 * headerOffsetTop);
+            var valid = target.scrollTop - (ele.offsetTop - firstChildOffsetTop - 2 * headerOffsetTop) + bounds;
             // console.log("valid", valid)
             if (valid > 0) {
               activeID = ele.getAttribute('data-item-id');
@@ -303,7 +305,8 @@ Anchor.propTypes = {
   titleClassName: _propTypes2.default.string,
   bodyClassName: _propTypes2.default.string,
   onClick: _propTypes2.default.func,
-  bodyHeightRealTime: _propTypes2.default.bool
+  bodyHeightRealTime: _propTypes2.default.bool,
+  bounds: _propTypes2.default.number
 };
 
 Anchor.defaultProps = {
@@ -313,7 +316,8 @@ Anchor.defaultProps = {
   titleClassName: '',
   bodyClassName: '',
   onClick: function onClick() {},
-  bodyHeightRealTime: false
+  bodyHeightRealTime: false,
+  bounds: 5
 };
 
 exports.default = Anchor;

@@ -40,6 +40,14 @@ describe('Anchor unitTest', () => {
     expect(wrapper.props().bodyHeightRealTime).toEqual(true)
   })
 
+  it('set bounds', () => {
+    const wrapper = mount(<Anchor titleList={titleList}>{generateBodyItem}</Anchor>)
+    expect(wrapper.props().bounds).toEqual(5)
+
+    wrapper.setProps({ bounds: 10 })
+    expect(wrapper.props().bounds).toEqual(10)
+  })
+
   it('set className', () => {
     const wrapper = mount(<Anchor titleList={titleList}>{generateBodyItem}</Anchor>)
     expect(wrapper.find('.my-anchor-class').length).toEqual(0)
