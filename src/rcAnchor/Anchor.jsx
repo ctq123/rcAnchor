@@ -14,7 +14,7 @@ class Anchor extends React.Component {
     this.state = {
       activeID: undefined,
       clickActiveID: undefined,
-      headerHeight: 0,
+      headerOffsetTop: 0,
       bodyMaxHeight: '100%'
     }
   }
@@ -34,7 +34,7 @@ class Anchor extends React.Component {
   componentDidUpdate() {
     if (this.props.bodyHeightRealTime) {
       const res = this.getMaxHeight()
-      this.state.headerHeight = res[0]
+      this.state.headerOffsetTop = res[0]
       this.state.bodyMaxHeight = res[1]
     }
   }
@@ -49,21 +49,24 @@ class Anchor extends React.Component {
   handleScroll(e) {
     const target = e.target
     // console.log("e>>", e)
+    const { headerOffsetTop, clickActiveID } = this.state
     let activeID
 
-    if (this.state.clickActiveID) {
-      activeID = this.state.clickActiveID
+    if (clickActiveID) {
+      activeID = clickActiveID
     } else {
       const children = target && target.children
+      const firstChildOffsetTop = (target.firstChild && target.firstChild.offsetTop) || 0
       if (children && children.length) {
         for(let i = 0; i < children.length; i++) {
           const ele = children[i]
-          // console.log("ele.offsetTop>>", ele.offsetTop, "target.offsetTop>>", target.offsetTop)
-          // console.log("this.state.headerHeight>>", this.state.headerHeight, "target.scrollTop>>", target.scrollTop)
-          const valid = (ele.offsetTop - target.offsetTop) > (target.scrollTop - this.state.headerHeight)
+          // console.log("ele", ele)
+          // console.log("target.scrollTop>>", target.scrollTop, "ele.offsetTop>>", ele.offsetTop, "firstChildOffsetTop>>", firstChildOffsetTop)
+          const valid = target.scrollTop - (ele.offsetTop - firstChildOffsetTop - 2 * headerOffsetTop)
           // console.log("valid", valid)
-          if(valid) {
+          if (valid > 0) {
             activeID = ele.getAttribute('data-item-id')
+          } else {
             break
           }
         }
@@ -90,7 +93,7 @@ class Anchor extends React.Component {
       // console.log("containerHeight=", container.clientHeight, " headerHeight=", headerHeight)
       let bodyMaxHeight = (containerHeight - headerHeight - headerOffsetTop * 2)
       bodyMaxHeight = (bodyMaxHeight > 0 && bodyMaxHeight) || '100%'
-      res = [headerHeight, bodyMaxHeight]
+      res = [headerOffsetTop, bodyMaxHeight]
     }
     return res
   }
@@ -99,7 +102,7 @@ class Anchor extends React.Component {
     if (this.props.headDirection === 'row') {
       const res = this.getMaxHeight()
       this.setState({
-        headerHeight: res[0],
+        headerOffsetTop: res[0],
         bodyMaxHeight: res[1]
       })
     }

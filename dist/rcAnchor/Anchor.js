@@ -44,7 +44,7 @@ var Anchor = function (_React$Component) {
     _this.state = {
       activeID: undefined,
       clickActiveID: undefined,
-      headerHeight: 0,
+      headerOffsetTop: 0,
       bodyMaxHeight: '100%'
     };
     return _this;
@@ -70,7 +70,7 @@ var Anchor = function (_React$Component) {
     value: function componentDidUpdate() {
       if (this.props.bodyHeightRealTime) {
         var res = this.getMaxHeight();
-        this.state.headerHeight = res[0];
+        this.state.headerOffsetTop = res[0];
         this.state.bodyMaxHeight = res[1];
       }
     }
@@ -87,21 +87,27 @@ var Anchor = function (_React$Component) {
     value: function handleScroll(e) {
       var target = e.target;
       // console.log("e>>", e)
+      var _state = this.state,
+          headerOffsetTop = _state.headerOffsetTop,
+          clickActiveID = _state.clickActiveID;
+
       var activeID = void 0;
 
-      if (this.state.clickActiveID) {
-        activeID = this.state.clickActiveID;
+      if (clickActiveID) {
+        activeID = clickActiveID;
       } else {
         var children = target && target.children;
+        var firstChildOffsetTop = target.firstChild && target.firstChild.offsetTop || 0;
         if (children && children.length) {
           for (var i = 0; i < children.length; i++) {
             var ele = children[i];
-            // console.log("ele.offsetTop>>", ele.offsetTop, "target.offsetTop>>", target.offsetTop)
-            // console.log("this.state.headerHeight>>", this.state.headerHeight, "target.scrollTop>>", target.scrollTop)
-            var valid = ele.offsetTop - target.offsetTop > target.scrollTop - this.state.headerHeight;
+            // console.log("ele", ele)
+            // console.log("target.scrollTop>>", target.scrollTop, "ele.offsetTop>>", ele.offsetTop, "firstChildOffsetTop>>", firstChildOffsetTop)
+            var valid = target.scrollTop - (ele.offsetTop - firstChildOffsetTop - 2 * headerOffsetTop);
             // console.log("valid", valid)
-            if (valid) {
+            if (valid > 0) {
               activeID = ele.getAttribute('data-item-id');
+            } else {
               break;
             }
           }
@@ -130,7 +136,7 @@ var Anchor = function (_React$Component) {
         // console.log("containerHeight=", container.clientHeight, " headerHeight=", headerHeight)
         var bodyMaxHeight = containerHeight - headerHeight - headerOffsetTop * 2;
         bodyMaxHeight = bodyMaxHeight > 0 && bodyMaxHeight || '100%';
-        res = [headerHeight, bodyMaxHeight];
+        res = [headerOffsetTop, bodyMaxHeight];
       }
       return res;
     }
@@ -140,7 +146,7 @@ var Anchor = function (_React$Component) {
       if (this.props.headDirection === 'row') {
         var res = this.getMaxHeight();
         this.setState({
-          headerHeight: res[0],
+          headerOffsetTop: res[0],
           bodyMaxHeight: res[1]
         });
       }
