@@ -184,7 +184,7 @@ css
 属性 | 描述 | 类型 | 默认值 | 是否必填
 ---|---|---|---|--
 titleList | 头部显示名称数组，数组对象必须包含两个属性{itemId, name} | array |  | 是
-headDirection | 方向，横向或垂直 | enum ('row'|'col') | 'row' | 否
+headDirection | 方向，横向或垂直 | enum ('row', 'col') | 'row' | 否
 bodyHeightRealTime | 组件body最大高度是否实时获取，仅当headDirection='row'时有效 | bool | false | 否
 bounds | 锚点区域边界 | number | 5(px) | 否
 onClick | 点击头部名称回调函数 | function | (e)=>{} | 否
