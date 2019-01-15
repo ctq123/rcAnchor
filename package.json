@@ -1,6 +1,6 @@
 {
   "name": "rc-anchor",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "",
   "main": "dist/index.js",
   "directories": {
@@ -29,10 +29,10 @@
     "url": "git+https://github.com/ctq123/rcAnchor.git"
   },
   "keywords": [
+    "scroll",
     "rc-anchor",
     "rcanchor",
     "anchor",
-    "scroll",
     "scrollpy",
     "react"
   ],

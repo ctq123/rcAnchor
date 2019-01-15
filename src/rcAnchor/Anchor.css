@@ -22,3 +22,18 @@
 .rc-anchor .rc-anchor-body {
   overflow-y: auto;
 }
+
+.rc-anchor .rc-anchor-body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #eee;
+}
+
+.rc-anchor .rc-anchor-body::-webkit-scrollbar-track {
+  box-shadow: 0 0 15px 1px rgba(69, 65, 78, 0.1);
+  border-radius: 10px;
+}
+
+.rc-anchor .rc-anchor-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background:rgba(0,0,0,0.1);
+}
