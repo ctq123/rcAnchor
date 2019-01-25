@@ -159,9 +159,11 @@ var Anchor = function (_React$Component) {
       e.preventDefault();
       var target = e.target;
       // console.log("e2>>", e)
-      this.removeActiveClass();
       var itemId = target.getAttribute('data-item-id');
       if (itemId) {
+        if (itemId !== this.state.activeID) {
+          this.removeActiveClass();
+        }
         var container = this.getEleByClass('rc-anchor-body', 'single');
         var eles = container && container.children;
         if (eles && eles.length) {

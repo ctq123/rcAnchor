@@ -34,16 +34,16 @@ class App extends React.Component {
 
   handleClickTitle(node) {
     console.log('node>>>', node)
-    const { titleList } = this.state
-    let arr = []
-    if (titleList && titleList.length > 5) {
-      arr = titleList1
-    } else {
-      arr = titleList2
-    }
-    this.setState({
-      titleList: arr
-    })
+    // const { titleList } = this.state
+    // let arr = []
+    // if (titleList && titleList.length > 5) {
+    //   arr = titleList1
+    // } else {
+    //   arr = titleList2
+    // }
+    // this.setState({
+    //   titleList: arr
+    // })
   }
 
   render() {
@@ -61,7 +61,7 @@ class App extends React.Component {
           bodyHeightRealTime={true}
           onClick={this.handleClickTitle.bind(this)}
           >
-          {/* {generateBodyItem} */}
+          {generateBodyItem}
         </Anchor>
       </div>
     )

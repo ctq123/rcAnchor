@@ -113,9 +113,11 @@ class Anchor extends React.Component {
     e.preventDefault()
     const target = e.target
     // console.log("e2>>", e)
-    this.removeActiveClass()
     const itemId = target.getAttribute('data-item-id')   
     if (itemId) {
+      if (itemId !== this.state.activeID) {
+        this.removeActiveClass()
+      }
       const container = this.getEleByClass('rc-anchor-body', 'single')
       const eles = container && container.children
       if (eles && eles.length) {
