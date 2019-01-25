@@ -184,7 +184,7 @@ css
 
 # Prop Types
 
-propsName | description | type | default | isRequired
+props | description | type | default | isRequired
 ---|---|---|---|--
 titleList | The header displays an array of names, and the array object must contain two properties.{itemId, name} | array |  | Y
 headDirection | the header direction, horizontal or vertical | enum ('row', 'col') | 'row' | N

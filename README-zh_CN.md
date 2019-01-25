@@ -1,3 +1,7 @@
+# rc-anchor
+
+[English](./README.md) | 简体中文
+
 这是一个react锚点组件（滚动游标），可内嵌多个在同一个页面，相互独立互不影响，提供横向和纵向排版，css样式完全自定义
 
 ## React Anchor
