@@ -1,8 +1,8 @@
 # rc-anchor
 
-English | [简体中文](./README-zh_CN.md) 
+[English](./README-en_EN.md) | 简体中文
 
-This is a react anchor component (scroll cursor) that can be embedded multiple times on the same page, independent of each other, providing horizontal and vertical layout, css style fully customizable
+这是一个react锚点组件（滚动游标），可内嵌多个在同一个页面，相互独立互不影响，提供横向和纵向排版，css样式完全自定义
 
 ## React Anchor
 [![Build Status](https://travis-ci.org/ctq123/rcAnchor.svg?branch=master&foo=bar)](https://travis-ci.org/ctq123/rcAnchor)
@@ -16,7 +16,7 @@ This is a react anchor component (scroll cursor) that can be embedded multiple t
 npm install rc-anchor --save-dev
 # Usage
 
-## horizontal demo
+## 横向例子
 ![image](https://github.com/ctq123/rcAnchor/blob/master/examples/gif/example1.gif)
 ```
 mport React from 'react'
@@ -97,7 +97,7 @@ css
 }
 ```
 
-## vertical demo
+## 纵向例子
 ![image](https://github.com/ctq123/rcAnchor/blob/master/examples/gif/example2.gif)
 
 ```
@@ -184,14 +184,14 @@ css
 
 # Prop Types
 
-props | description | type | default | isRequired
+属性 | 描述 | 类型 | 默认值 | 是否必填
 ---|---|---|---|--
-titleList | The header displays an array of names, and the array object must contain two properties.{itemId, name} | array |  | Y
-headDirection | the header direction, horizontal or vertical | enum ('row', 'col') | 'row' | N
-bodyHeightRealTime | whether the maximum height of the component body is acquired in real time, only valid when headDirection='row | bool | false | N
-bounds | the Anchor area boundary | number | 5(px) | N
-onClick | click on the head name callback function | function | (e)=>{} | N
-className | the className of the component | string | '' | N
-headerClassName | the className of the component header | string | '' | N
-titleClassName | the className of the component headerTitle，the className of active headerTitle is 'rc-title-item-active' | string | '' | N
-bodyClassName | the className of the component body | string | '' | N
+titleList | 头部显示名称数组，数组对象必须包含两个属性{itemId, name} | array |  | 是
+headDirection | 方向，横向或垂直 | enum ('row', 'col') | 'row' | 否
+bodyHeightRealTime | 组件body最大高度是否实时获取，仅当headDirection='row'时有效 | bool | false | 否
+bounds | 锚点区域边界 | number | 5(px) | 否
+onClick | 点击头部名称回调函数 | function | (e)=>{} | 否
+className | 该组件的className | string | '' | 否
+headerClassName | 该组件头部的className | string | '' | 否
+titleClassName | 该组件头部名称标签的className，活动标签写死为'rc-title-item-active'可重写 | string | '' | 否
+bodyClassName | 该组件body内容的className | string | '' | 否
